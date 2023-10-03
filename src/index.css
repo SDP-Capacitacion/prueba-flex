@@ -44,7 +44,7 @@ body {
 
 .block {
   display: flex;
-  gap: 20px 2%;
+  gap: 20px 10px;
   flex-wrap: wrap;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .content {
   background-color: #b0578d;
-  flex-grow: 4;
+  flex-grow: 2;
 }
 
 .card {
