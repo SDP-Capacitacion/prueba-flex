@@ -1,0 +1,147 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  background-color: rgba(123, 198, 199, 0.8);
+  padding: 10px 20px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-column {
+  width: 30%;
+}
+
+.section-block {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.block {
+  display: flex;
+  gap: 20px 2%;
+  flex-wrap: wrap;
+}
+
+.item-block {
+  width: 32%;
+  min-height: 150px;
+}
+
+.block-with-sidebar {
+  display: flex;
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.item-sidebar {
+  min-height: 500px;
+}
+
+.sidebar {
+  background-color: #d988b9;
+  flex-grow: 1;
+}
+
+.content {
+  background-color: #b0578d;
+  flex-grow: 4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1000px;
+  min-height: 500px;
+  /* flex-direction: column-reverse; */
+}
+
+.item-card:nth-child(1) {
+  background-color: #facbea;
+  flex-grow: 2;
+}
+
+.item-card:nth-child(2) {
+  background-color: #d988b9;
+  flex-grow: 5;
+}
+
+.item-card:nth-child(3) {
+  background-color: #b0578d;
+  flex-grow: 2;
+}
+
+.two-column {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  min-height: 300px;
+}
+
+.first-column {
+  background-color: #facbea;
+  flex-grow: 2;
+}
+
+.second-column {
+  background-color: #d988b9;
+  flex-grow: 1;
+}
+
+.second-column .item-two-column,
+.second-column .item-one-column {
+  height: 50%;
+}
+
+.all-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe4d6;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row-item {
+  display: flex;
+  min-height: 200px;
+}
+
+.row-item:nth-child(1),
+.row-item:nth-child(3) {
+  background-color: #facbea;
+}
+
+.row-item:nth-child(2) {
+  background-color: #d988b9;
+}
+
+.all-page-item {
+  flex-grow: 1;
+}
